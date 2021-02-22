@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.left-side {
+  background-color: gold;
+  color: white;
+  padding: 0 40px;
+}
+
+.photo {
+  display: block;
+  border-radius: 50%;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.contacts img {
+  width: 32px;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-side {
+  background-color: beige;
+  padding: 0 30px;
+}
+/*# sourceMappingURL=style.css.map */
