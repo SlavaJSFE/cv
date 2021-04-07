@@ -7,7 +7,7 @@ $secondary-color: rgb(255, 215, 0);
   margin: 0;
   padding: 0;
 }
-.wrapper {
+   {
   display: grid;
   grid-template-columns: 375px 1fr;
   max-width: 1200px;
@@ -90,11 +90,51 @@ hr {
   width: 50%;
   margin: 0 auto;
 }
-.projects,
+.react-projects,
+.js-projects,
 .courses,
 .work-experience,
 .education {
   li {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .left-side {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .photo {
+    max-width: 200px;
+    height: 100%;
+  }
+  .left-side-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .left-section {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .right-side {
+    padding: 50px 20px 0;
+  }
+}
+
+@media screen and (max-width: 409px) {
+  .wrapepr {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+  }
+  .skills-list {
+    grid-template-columns: 1fr;
   }
 }

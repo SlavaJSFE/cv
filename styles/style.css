@@ -109,10 +109,56 @@ hr {
   margin: 0 auto;
 }
 
-.projects li,
+.react-projects li,
+.js-projects li,
 .courses li,
 .work-experience li,
 .education li {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .left-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .photo {
+    max-width: 200px;
+    height: 100%;
+  }
+  .left-side-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .left-section {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .right-side {
+    padding: 50px 20px 0;
+  }
+}
+
+@media screen and (max-width: 409px) {
+  .skills-list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=style.css.map */
