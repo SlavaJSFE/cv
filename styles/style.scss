@@ -7,7 +7,7 @@ $secondary-color: rgb(255, 215, 0);
   margin: 0;
   padding: 0;
 }
-   {
+.wrapper {
   display: grid;
   grid-template-columns: 375px 1fr;
   max-width: 1200px;
@@ -130,7 +130,7 @@ hr {
 }
 
 @media screen and (max-width: 409px) {
-  .wrapepr {
+  .wrapper {
     font-size: 14px;
     letter-spacing: 0.2px;
   }
